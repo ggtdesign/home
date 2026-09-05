@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://ggt-design.de/
+Sitemap: https://ggtdesign.github.io/home.github.io/
