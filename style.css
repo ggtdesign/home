@@ -391,11 +391,11 @@ section#start {
   margin-top: 64px;
 }
 
-.appstore {
+.itch-io {
   width: 125px;
   height: 38px;
   margin-top: 16px;
-  background-image: url('assets/appstore.png');
+  background-image: url('assets/itch-io.png');
   background-repeat: no-repeat;
   background-size: contain;
   cursor: url('assets/cursor.svg'), auto;
