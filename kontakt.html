@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>GGT Design - Kontakt</title>
+    <meta name="description" content="Kontakt - Grafikdesign, Branding, Webdesign und Illustration. Kreative Projekte für Unternehmen und Startups.">
+    <meta name="keywords" content="Grafikdesigner, Webdesign, Logo-Design, Logo erstellen lassen, Branding, Illustration, Corporate Design, Corporate Identity, Printdesign, Freelancer Grafikdesign, Visitenkarten, Grafikdesign Deutschland, Bad Urach, Reutlingen, Stuttgart">
+  </head>
+  <body>
+    <header>
+      <div class="navi">
+        <a href="index.html" class="logo"></a>
+        <ul class="links">
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="dienste.html">Dienste</a></li>
+          <li><a href="preise.html">Preise</a></li>
+          <li><a href="kontakt.html" style="text-decoration: underline;">Kontakt</a></li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <div class="offcanvas_menu" id="offcanvasMenu">
+      <div class="close_btn">
+        <i class="fa-solid fa-times"></i>
+      </div>
+      <ul>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="dienste.html">Dienste</a></li>
+        <li><a href="preise.html">Preise</a></li>
+        <li><a href="kontakt.html" style="text-decoration: underline;">Kontakt</a></li>
+      </ul>
+    </div>
+    <main>
+      <section id="start">
+        <h1 class="titel-kontakt">Kontakt</h1>
+        <div class="profilbild"></div>
+        <h4 class="beschreibung-kontakt">
+          Falls Sie Interesse oder Fragen haben, zögern Sie nicht, mir per E-Mail zu schreiben oder mich telefonisch zu kontaktieren.
+          <br>
+          Alternativ können Sie auch das Kontaktformular nutzen − wie es Ihnen am bequemsten ist.
+          <br><br>
+          Rufen Sie mich an unter:
+          <br>
+          <i class="fa-solid fa-phone"></i> +49 179 4685589
+          <br><br>
+          Schreiben Sie mir eine E-Mail an:
+          <br>
+          <i class="fa-solid fa-envelope"></i> ggtdesign@protonmail.com
+          <br><br>
+          Ich freue mich auf Sie.
+        </h4>
+
+        <form action="https://formspree.io/f/xnnjlade" method="POST" class="contact-form">
+          <fieldset>
+            <legend>Kontaktformular</legend>
+        
+            <div class="form-group">
+              <label for="title">Anrede*</label>
+              <select id="title" name="title" required>
+                <option value="">-</option>
+                <option value="Divers">Divers</option>
+                <option value="Frau">Frau</option>
+                <option value="Herr">Herr</option>
+              </select>
+              <span class="error-message"></span>
+            </div>
+        
+            <div class="form-group">
+              <label for="name">Vor- & Nachname*</label>
+              <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+              <span class="error-message"></span>
+            </div>
+        
+            <div class="form-group">
+              <label for="email">E-Mail*</label>
+              <input type="email" id="email" name="email" required placeholder="max@mustermann.de">
+              <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone-number">Handynummer</label>
+              <input type="tel" id="phone-number" name="phone-number" placeholder="+49 123 456789">
+            </div>
+        
+            <div class="form-group">
+              <label for="company">Unternehmen</label>
+              <input type="text" id="company" name="company" placeholder="Musterfirma GmbH">
+            </div>
+        
+            <div class="form-group">
+              <label for="country">Land</label>
+              <input type="text" id="country" name="country" placeholder="Musterland">
+            </div>
+        
+            <div class="form-group">
+              <label for="message">Ihre Nachricht*</label>
+              <textarea id="message" name="message" required placeholder="Was möchten Sie denn gerne wissen?"></textarea>
+              <span class="error-message"></span>
+            </div>
+        
+            <div class="form-checkbox">
+              <input type="checkbox" id="dpa-consent" name="dpa-consent" required>
+              <label for="dpa-consent">
+                Ich stimme der Datenverarbeitung gemäß der Datenschutzbestimmungen zu.
+              </label>
+            </div>
+        
+            <button type="submit" class="submit-button">Absenden</button>
+          </fieldset>
+        </form>
+        
+        <h4 class="copyright">© 2025 GGT Design. Alle Rechte vorbehalten.</h4>
+        
+        <div class="rechtliches">
+          <a class="agb" href="agb.html">AGB</a> | 
+          <a class="datenschutz" href="datenschutz.html">Datenschutzerklärung</a> | 
+          <a class="impressum" href="impressum.html">Impressum</a>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
