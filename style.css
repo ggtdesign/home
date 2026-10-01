@@ -314,6 +314,125 @@ header {
   transform-origin: center calc(100% - 15.5px);
 }
 
+.uhr3 {
+  width: 256px;
+  height: 256px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.25);
+}
+
+.ziffernblatt3 {
+  background-image: url('assets/n_ziffernblatt_01.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 942px;
+  height: 942px;
+  position: relative;
+}
+
+.messschieber3 {
+  width: 942px;
+  height: 942px;
+  position: relative;
+}
+
+.mondphase-dial {
+  background-image: url('assets/n_mond_phase_01.png');
+  width: 196px;
+  height: 196px;
+  position: absolute;
+  left: 372px;
+  bottom: 192px;
+}
+
+.mondphase-abdeckung {
+  background-image: url('assets/n_mond_abdeckung_01.png');
+  width: 186px;
+  height: 134px;
+  position: absolute;
+  left: 377px;
+  bottom: 195px;
+}
+
+.totalisator-links1 {
+  background-image: url('assets/n_mini_short_01.png');
+  width: 51px;
+  height: 83px;
+  position: absolute;
+  left: 261px;
+  bottom: 442px;
+  transform: translateX(-25.5px), translateY(-25.5px);
+  transform-origin: center calc(100% - 25.5px);
+}
+
+.totalisator-links2 {
+  background-image: url('assets/n_mini_long_01.png');
+  width: 40px;
+  height: 108px;
+  position: absolute;
+  left: 267px;
+  bottom: 447px;
+  transform: translateX(-20px), translateY(-20px);
+  transform-origin: center calc(100% - 20px);
+}
+
+.totalisator-rechts1 {
+  background-image: url('assets/n_mini_short_01.png');
+  width: 51px;
+  height: 83px;
+  position: absolute;
+  right: 261px;
+  bottom: 442px;
+  transform: translateX(-25.5px), translateY(-25px);
+  transform-origin: center calc(100% - 25px);
+}
+
+.totalisator-rechts2 {
+  background-image: url('assets/n_mini_long_01.png');
+  width: 40px;
+  height: 108px;
+  position: absolute;
+  right: 267px;
+  bottom: 447px;
+  transform: translateX(-20px), translateY(-20px);
+  transform-origin: center calc(100% - 20px);
+}
+
+.totalisator-unten1 {
+  background-image: url('assets/n_mini_extraLongShort_01.png');
+  width: 41px;
+  height: 156px;
+  position: absolute;
+  left: 450px;
+  bottom: 250px;
+  transform: translateX(-40.5px), translateY(-38px);
+  transform-origin: center calc(100% - 40.5px);
+}
+
+.stundenzeiger3 {
+  background-image: url('assets/n_stundenzeiger_01.png');
+  width: 63px;
+  height: 235px;
+  position: absolute;
+  left: 439px;
+  bottom: 438px;
+  transform-origin: center calc(100% - 31.5px);
+}
+
+.minutenzeiger3 {
+  background-image: url('assets/n_minutenzeiger_01.png');
+  width: 52px;
+  height: 335px;
+  position: absolute;
+  left: 445px;
+  bottom: 443px;
+  transform-origin: center calc(100% - 26.5px);
+}
+
 section#start {
   height: 100vh - 64px;
   display: flex;
@@ -802,4 +921,14 @@ textarea {
   justify-content: center;
   text-align: center;
   cursor: url('assets/cursor.svg'), auto;
+}
+
+.error-message {
+  color: #c70000;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.error-border {
+  border: 1px solid #c70000;
 }
