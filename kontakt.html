@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -62,11 +62,9 @@
           <br><br>
           Ich freue mich auf Sie.
         </h4>
-
-        <form action="https://formspree.io/f/xnnjlade" method="POST" class="contact-form">
+        <form action="https://formspree.io/f/xnnjlade" method="POST" class="contact-form" id="contactForm" novalidate>
           <fieldset>
             <legend>Kontaktformular</legend>
-        
             <div class="form-group">
               <label for="title">Anrede*</label>
               <select id="title" name="title" required>
@@ -77,53 +75,44 @@
               </select>
               <span class="error-message"></span>
             </div>
-        
             <div class="form-group">
               <label for="name">Vor- & Nachname*</label>
               <input type="text" id="name" name="name" required placeholder="Max Mustermann">
               <span class="error-message"></span>
             </div>
-        
             <div class="form-group">
               <label for="email">E-Mail*</label>
               <input type="email" id="email" name="email" required placeholder="max@mustermann.de">
               <span class="error-message"></span>
             </div>
-
             <div class="form-group">
               <label for="phone-number">Handynummer</label>
               <input type="tel" id="phone-number" name="phone-number" placeholder="+49 123 456789">
             </div>
-        
             <div class="form-group">
               <label for="company">Unternehmen</label>
               <input type="text" id="company" name="company" placeholder="Musterfirma GmbH">
             </div>
-        
             <div class="form-group">
               <label for="country">Land</label>
               <input type="text" id="country" name="country" placeholder="Musterland">
             </div>
-        
             <div class="form-group">
               <label for="message">Ihre Nachricht*</label>
               <textarea id="message" name="message" required placeholder="Was möchten Sie denn gerne wissen?"></textarea>
               <span class="error-message"></span>
             </div>
-        
             <div class="form-checkbox">
               <input type="checkbox" id="dpa-consent" name="dpa-consent" required>
               <label for="dpa-consent">
                 Ich stimme der Datenverarbeitung gemäß der Datenschutzbestimmungen zu.
               </label>
+              <span class="error-message"></span>
             </div>
-        
             <button type="submit" class="submit-button">Absenden</button>
           </fieldset>
         </form>
-        
         <h4 class="copyright">© GGT Design. Alle Rechte vorbehalten.</h4>
-        
         <div class="rechtliches">
           <a class="agb" href="agb.html">AGB</a> | 
           <a class="datenschutz" href="datenschutz.html">Datenschutzerklärung</a> | 
